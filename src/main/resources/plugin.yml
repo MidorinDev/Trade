@@ -1,0 +1,3 @@
+name: Trade
+version: ${project.version}
+main: plugin.midorin.info.trade.TradePlugin
