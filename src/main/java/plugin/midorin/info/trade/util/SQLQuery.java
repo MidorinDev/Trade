@@ -21,8 +21,8 @@ public enum  SQLQuery
                     "world VARCHAR(16)," +
                     "x BIGINT," +
                     "y BIGINT," +
-                    "z BIGINT" +
-                    "shop BIGINT" +
+                    "z BIGINT," +
+                    "shop VARCHAR(16)" +
                     ")"
     ),
     CREATE_TABLE_ITEMS(
@@ -67,7 +67,7 @@ public enum  SQLQuery
     SELECT_EXACT_SHOPS(
             "SELECT * FROM `Shops` WHERE `uuid` = ? AND `world` = ? AND `world` = ? AND `x` = ? AND `y` = ? AND `z` = ? AND `shop` = ?",
 
-            "SELECT * FROM Shops WHERE uuid = ? AND world = ? AND world = ? AND x = ? AND y = ? AND z = ? AND shop = ?"
+            "SELECT * FROM Shops WHERE uuid = ? AND world = ? AND x = ? AND y = ? AND z = ? AND shop = ?"
     )
     /*
     ,
