@@ -38,7 +38,7 @@ public class Trade
         if (uuid == null) return;
         try
         {
-            Database.get().executeStatement(SQLQuery.INSERT_SHOPS, uuid, world.getName(), x, y, z, "test");
+            Database.get().executeStatement(SQLQuery.INSERT_SHOPS, id,uuid, world.getName(), x, y, z, "test");
             try (ResultSet rs = Database.get().executeResultStatement(SQLQuery.SELECT_EXACT_SHOPS, uuid, world.getName(), x, y, z, "test"))
             {
                 if (!rs.next())
